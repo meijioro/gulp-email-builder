@@ -1,0 +1,11 @@
+$root-font-size: 16; // Default
+
+@function px-to-em($pixels, $context: $root-font-size) {
+  @return ($pixels / $context) * 1em;
+}
+
+.test {
+  color: blue;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 18px;
+}
